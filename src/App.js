@@ -5,7 +5,7 @@ import Head from "./components/Head";
 import Main from "./components/Main";
 import socketIO from "socket.io-client";
 const socket = socketIO.connect("https://statsxbetsapi.onrender.com/", {
-  withCredentials: false,
+  transports: ["websocket"],
 });
 // const socket = socketIO.connect("https://statsxbets.onrender.com");
 const queryClient = new QueryClient();
