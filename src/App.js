@@ -4,7 +4,7 @@ import theme from "./themes/index";
 import Head from "./components/Head";
 import Main from "./components/Main";
 import socketIO from "socket.io-client";
-const socket = socketIO.connect("http://localhost:3000");
+const socket = socketIO.connect("https://statsxbets.onrender.com");
 const queryClient = new QueryClient();
 
 function App() {
